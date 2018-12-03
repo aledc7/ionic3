@@ -1,8 +1,8 @@
-# ionic3
+# ionic 3
 #### Este repositorio contiene comandos de ionic 3
 
 
-- Instalando
+### Instalando
 ```
 sudo npm install -g cordoba
 sudo npm install -g cordoba ionic
@@ -36,8 +36,8 @@ esto se debe repetir con cada página que se agregue
 ionic cordoba run android --device
 ionic cordoba run ios --device
 ```
-
-- Poner fondo de pantalla a un Actívity
+_____________________________________________________________________________________________________
+### Poner fondo de pantalla a un Actívity
 
 1. Primero cargar las imágenes en la ruta correspondiente
 ```
@@ -61,8 +61,9 @@ background-size: contain;
               }
           }
 ```
+_____________________________________________________________________________________________________
 
-- Poner una imagen como boton
+### Poner una imagen como boton
 
 1. Previamente la imagen debe estar en la carpeta src/assets/imgs
 2. en el html donde se quiera poner el boton se debe ingresar dentro de <ion-content padding>
@@ -87,6 +88,39 @@ left: -7%;
           }
 ```
   
+_____________________________________________________________________________________________________
+
+### Archivos textscript "ts"
+
+Similar a un archivo .js aquí se encontraran todas las funciones y la lógica de la app. Aquí un ejemplo de una funcion para pasar de un activity a otro:
+```
+volver(){
+  this.navCtrl.push(SegundapaginaPage);
+        }
+```
+
+Tener presente que la página a la que se quiere redirigir debe estar importada en la cabecera del archivo .ts en el que se está trabajando.
+
+_____________________________________________________________________________________________________
+### Estilos y funciones globales
+
+```
+src/app/app.scss
+```
+La hoja de estilos de arriba es GLOBAL, en caso de querer compartir un mismo estilo en varios activityes se debe poner aca.
+_____________________________________________________________________________________________________
+
+### Listar Plugins instalados
+
+```
+ionic cordova plugin                # lista todos los plugins
+ionic cordova add nombre_plugin     # agrega un pligin
+ionic cordova rm nombre_plugin      # borra un plugin
+VARIANTES
+cordova plugin ls     #lista todos los plugins
+cordova plugin add    # agrega un pligin
+cordova plugin rm     # borra un plugin
+
 
 
 
