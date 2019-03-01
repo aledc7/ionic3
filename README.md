@@ -22,6 +22,22 @@ ionic serve --lab
 ```
 ionic generate page nombre_pagina
 ```
+
+Se pueden generar varias cosas con __ionic generate___ sin indicar nada mas
+
+```
+? What would you like to generate: (Use arrow keys)
+❯ component 
+  directive 
+  page 
+  pipe 
+  provider 
+  tabs 
+  ```
+  
+  
+
+
 Luego dentro de src/app/app.modules.ts se debe importar la página que se agrego en el paso anterior
 ```
 import {nombre_paginaPage} from '../carpeta/nombre_pagina';
