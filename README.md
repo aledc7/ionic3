@@ -36,6 +36,22 @@ esto se debe repetir con cada página que se agregue
 ionic cordoba run android --device
 ionic cordoba run ios --device
 ```
+
+
+## Manejo de Plugins
+
+```
+# listar plugins instalados:
+ionic cordova plugin
+
+# instalar plugin:
+ionic cordova plugin add cordova-plugin-inappbrowser@latestcordova-plugin-inappbrowser@latest
+ionic cordova plugin add phonegap-plugin-push --variable SENDER_ID=XXXXX
+
+# borrar plugin:
+ionic cordova plugin rm cordova-plugin-camera
+```
+
 _____________________________________________________________________________________________________
 ### Poner fondo de pantalla a un Actívity
 
