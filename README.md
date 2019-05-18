@@ -1,4 +1,6 @@
 # ionic 3
+[<img src="https://github.com/aledc7/PHP-Certification/blob/master/aledc-logo.png?raw=true">](https://aledc.com)
+
 #### Este repositorio contiene comandos de ionic 3
 
 
